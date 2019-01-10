@@ -1,0 +1,68 @@
+//
+//  PrefixHeader.pch
+//  GBTaiJie
+//
+//  Created by 刘小坤 on 2018/831.
+//  Copyright © 2018年 刘小坤. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// MARK: 台阶内部头文件
+#import "GBTaiJie.h"
+
+
+//*------------------
+// MARK: 第三方SDK
+//-------------------*
+// 极光IM
+#import <JMessage/JMessage.h>
+// 极光统计JAnalytics功能所需头文件
+#import "JANALYTICSService.h"
+// 极光推送JPush功能所需头文件
+#import "JPUSHService.h"
+// 极光分享JSHARE 功能所需头文件
+#import "JSHAREService.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+// 推广
+#import "ShareInstallSDK.h"
+
+//*------------------
+// MARK: 第三方头文件
+//-------------------*
+/** 刷新 */
+#import "MJRefresh.h"
+/**   导航栏   */
+#import "WRNavigationBar.h"
+/** UI适配 */
+#import "Masonry.h"
+/** 提示框 */
+#import "MBProgressHUD.h"
+/** 响应式编程 */
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "UITextView+ZWPlaceHolder.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+/** 七牛 */
+#import "QiniuSDK.h"
+/** 对话框 */
+#import "SCLAlertView.h"
+/** 星星视图 */
+#import "HCSStarRatingView.h"
+/** 键盘管理 */
+#import "IQKeyboardManager.h"
+/** 下拉菜单 */
+#import "YCXMenu.h"
+#import "PYSearchViewController.h"
+#import "HXTagsView.h"
+#import "FSTextView.h"
+
+/** 数据解析 */
+#import <MJExtension/MJExtension.h>
+/**   SDWebImage 图片加载   */
+#import "UIImageView+WebCache.h"
+
+#endif /* PrefixHeader_pch */

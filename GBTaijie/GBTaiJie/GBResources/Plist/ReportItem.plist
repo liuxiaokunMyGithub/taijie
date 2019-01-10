@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>headTitle</key>
+		<string>类型</string>
+		<key>content</key>
+		<array>
+			<dict>
+				<key>content</key>
+				<string>垃圾广告信息</string>
+			</dict>
+			<dict>
+				<key>content</key>
+				<string>泄露他人隐私，公司机密</string>
+			</dict>
+			<dict>
+				<key>content</key>
+				<string>辱骂、诽谤、污蔑等语言暴力</string>
+			</dict>
+			<dict>
+				<key>content</key>
+				<string>色情、暴力、血腥、迷信等违规内容</string>
+			</dict>
+			<dict>
+				<key>content</key>
+				<string>涉及政治敏感，民族地域歧视</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

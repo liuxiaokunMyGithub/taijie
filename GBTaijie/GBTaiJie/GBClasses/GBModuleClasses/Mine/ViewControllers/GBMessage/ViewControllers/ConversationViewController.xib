@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConversationViewController">
+            <connections>
+                <outlet property="imuiInputView" destination="7Eo-LL-gnr" id="Zfa-yx-EMb"/>
+                <outlet property="messageList" destination="Jb6-Qg-mBC" id="FqX-YE-HDF"/>
+                <outlet property="messageListTop" destination="Wnf-4d-Hwm" id="yyh-dH-1ng"/>
+                <outlet property="toolBarHeightConstrait" destination="Nqm-8a-Fcd" id="ZMw-ef-jdH"/>
+                <outlet property="toolBarToBottomConstrait" destination="G6U-Uj-oX8" id="6hV-C5-kHA"/>
+                <outlet property="view" destination="6qR-Hj-1YH" id="Zrz-Ce-48E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6qR-Hj-1YH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jb6-Qg-mBC" customClass="IMUIMessageCollectionView" customModule="GBTaiJie" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Eo-LL-gnr" customClass="JCHATToolBarContainer">
+                    <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Nqm-8a-Fcd"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="b1u-fg-0Cs"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Eo-LL-gnr" firstAttribute="leading" secondItem="6qR-Hj-1YH" secondAttribute="leading" id="0ig-rn-5Ug"/>
+                <constraint firstAttribute="trailing" secondItem="7Eo-LL-gnr" secondAttribute="trailing" id="0p4-kX-g4W"/>
+                <constraint firstItem="Jb6-Qg-mBC" firstAttribute="leading" secondItem="6qR-Hj-1YH" secondAttribute="leading" id="8mg-oN-Hll"/>
+                <constraint firstAttribute="bottomMargin" secondItem="7Eo-LL-gnr" secondAttribute="bottom" id="G6U-Uj-oX8"/>
+                <constraint firstItem="7Eo-LL-gnr" firstAttribute="top" secondItem="Jb6-Qg-mBC" secondAttribute="bottom" id="WSJ-Oi-ayK"/>
+                <constraint firstItem="Jb6-Qg-mBC" firstAttribute="top" secondItem="6qR-Hj-1YH" secondAttribute="top" id="Wnf-4d-Hwm"/>
+                <constraint firstAttribute="trailing" secondItem="Jb6-Qg-mBC" secondAttribute="trailing" id="rJA-5J-c98"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Hg9-p3-KtB"/>
+            <point key="canvasLocation" x="104.8" y="-217.24137931034485"/>
+        </view>
+    </objects>
+</document>
